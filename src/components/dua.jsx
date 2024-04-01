@@ -7,25 +7,26 @@ const LandingPage = () => {
   const [people, setPeople] = useState([]);
 
   useEffect(() => {
-    // Fetch data from the API when the component mounts
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    try {
-      // Make API call to fetch duas
-      const response = await fetch("https://dua-be.onrender.com/api/duas"); // Update URL with your backend URL
-      if (!response.ok) {
-        throw new Error("Failed to fetch data");
+    const fetchData = async () => {
+      try {
+        // Make API call to fetch duas
+        const response = await fetch("https://dua-be.onrender.com/api/duas"); // Update URL with your backend URL
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const data = await response.json();
+        setPeople(data); // Update state with fetched data
+      } catch (error) {
+        console.error("Error fetching data:", error);
+        // Handle error, show message, etc.
+        message.error("Failed to fetch data. Please try again later.");
       }
-      const data = await response.json();
-      setPeople(data); // Update state with fetched data
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      // Handle error, show message, etc.
-      message.error("Failed to fetch data. Please try again later.");
-    }
-  };
+    };
+
+    fetchData();
+    const intervalId = setInterval(fetchData, 50000);
+    return () => clearInterval(intervalId);
+  }, []);
 
   const handleMarkAsRead = (name) => {
     // Logic to mark dua as read
