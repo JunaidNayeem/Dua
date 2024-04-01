@@ -16,7 +16,7 @@ const MakeDuaPage = () => {
   const handleSubmit = async () => {
     try {
       // Make API call to submit dua
-      const response = await fetch("http://localhost:5000/api/duas", {
+      const response = await fetch("https://dua-be.onrender.com/api/duas", {
         // Updated endpoint URL
         method: "POST",
         headers: {

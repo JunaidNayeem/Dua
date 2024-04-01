@@ -14,7 +14,7 @@ const LandingPage = () => {
   const fetchData = async () => {
     try {
       // Make API call to fetch duas
-      const response = await fetch("http://localhost:5000/api/duas"); // Update URL with your backend URL
+      const response = await fetch("https://dua-be.onrender.com/api/duas"); // Update URL with your backend URL
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
