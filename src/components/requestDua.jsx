@@ -64,6 +64,7 @@ const MakeDuaPage = () => {
       </Button>
       <div
         style={{
+          border: "1px solid white",
           fontFamily: "inherit",
           textAlign: "center",
           marginBlock: "20%",
