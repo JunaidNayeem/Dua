@@ -57,7 +57,7 @@ const MakeDuaPage = () => {
         value={dua}
         onChange={handleDuaChange}
         rows={4}
-        style={{ marginBottom: "20px", height: "350px" }}
+        style={{ marginBottom: "20px" }}
       />
       <Button type="primary" onClick={handleSubmit}>
         Submit Dua
