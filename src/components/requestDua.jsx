@@ -64,7 +64,7 @@ const MakeDuaPage = () => {
       </Button>
       <div
         style={{
-          fontFamily: "cursive",
+          fontFamily: "inherit",
           textAlign: "center",
           marginBlock: "20%",
         }}
