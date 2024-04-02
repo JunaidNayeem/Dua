@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Input, Button, message } from "antd";
+import Dua from "/dua.png";
 
 const MakeDuaPage = () => {
   const [name, setName] = useState("");
@@ -41,7 +42,10 @@ const MakeDuaPage = () => {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Make Dua at Kabba</h1>
+      <h1 style={{ textAlign: "center" }}>Make Dua at Kabba</h1>
+      <div style={{ textAlign: "center" }}>
+        <img className="hover-img" src={Dua} alt="" />
+      </div>
       <Input
         placeholder="Enter your name"
         value={name}
@@ -53,7 +57,7 @@ const MakeDuaPage = () => {
         value={dua}
         onChange={handleDuaChange}
         rows={4}
-        style={{ marginBottom: "20px" }}
+        style={{ marginBottom: "20px", height: "350px" }}
       />
       <Button type="primary" onClick={handleSubmit}>
         Submit Dua

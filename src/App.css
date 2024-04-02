@@ -2,8 +2,8 @@
   margin-top: 10%;
   width: 150px;
   height: auto;
-  transition: transform 0.5s ease-in-out;
-  animation: hoverAnimation 2s infinite alternate; /* Animation for hovering up and down */
+  transition: transform 1.1s ease-in-out;
+  animation: hoverAnimation 1.5s infinite alternate; /* Animation for hovering up and down */
 }
 
 @keyframes hoverAnimation {

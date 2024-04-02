@@ -1,7 +1,7 @@
 import React from "react";
 import { Select, Flex, Button } from "antd";
 import { useNavigate } from "react-router-dom";
-import Kabba from "/dua.png";
+import Moon from "/moon.png";
 
 const { Option } = Select;
 
@@ -24,27 +24,41 @@ export default function Landing() {
   };
 
   return (
-    <Flex justify="center" align="center" vertical>
-      <h1>Dua</h1>
-      <img className="hover-img" src={Kabba} alt="" />
-      <form style={{ width: "100%", marginTop: "20%" }} onSubmit={handleSubmit}>
-        <Select
-          name="option"
-          style={{ width: "100%", marginBottom: "20px" }}
-          placeholder="Select an option"
-          onChange={handleChange}
+    <>
+      <Flex justify="center" align="center" vertical>
+        <h1>Dua</h1>
+        <img className="hover-img" src={Moon} alt="" />
+        <form
+          style={{ width: "100%", marginTop: "20%" }}
+          onSubmit={handleSubmit}
         >
-          <Option value="I am at Kabba">I am at Kabba</Option>
-          <Option value="I want to make dua at Kabba">
-            I want to make dua at Kabba
-          </Option>
-        </Select>
-      </form>
-      <div style={{ fontFamily: "cursive", textAlign: "center" }}>
-        Please feel free to share your prayers and wishes with us, and we will
-        do our utmost to deliver them to the Kaaba, the House of Allah. May
-        Allah answer all your prayers with His mercy and grace. آمين (Ameen).
-      </div>
-    </Flex>
+          <Select
+            name="option"
+            style={{ width: "100%", marginBottom: "20px" }}
+            placeholder="Select an option"
+            onChange={handleChange}
+          >
+            <Option value="I am at Kabba">I am at Kabba</Option>
+            <Option value="I want to make dua at Kabba">
+              I want to make dua at Kabba
+            </Option>
+          </Select>
+        </form>
+        <div
+          style={{
+            marginBlock: "50px",
+            padding: "10px",
+            fontFamily: "inherit",
+            textAlign: "center",
+            border: "1px solid white",
+          }}
+        >
+          Please feel free to share your prayers and wishes with us, and we will
+          do our utmost to deliver them to the Kaaba, the House of Allah. May
+          Allah answer all your prayers with His mercy and grace. آمين (Ameen).
+        </div>
+      </Flex>
+      <p style={{ position: "absolute", bottom: "0px", right: 10 }}>©Junaid</p>
+    </>
   );
 }
