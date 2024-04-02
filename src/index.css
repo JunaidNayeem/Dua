@@ -3,6 +3,7 @@ body {
   background-color: #5a3bb2;
   background-image: url("../src/assets/bg.svg");
   background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
