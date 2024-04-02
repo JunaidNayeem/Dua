@@ -38,7 +38,7 @@ export default function Landing() {
             placeholder="Select an option"
             onChange={handleChange}
           >
-            <Option value="I am at Kabba">I am at Kabba</Option>
+            {/* <Option value="I am at Kabba">I am at Kabba</Option> */}
             <Option value="I want to make dua at Kabba">
               I want to make dua at Kabba
             </Option>
