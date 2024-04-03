@@ -65,7 +65,7 @@ const LandingPage = () => {
         handleError(error);
       }
     } else {
-      message.error("Access to this page is restricted to certain locations.");
+      message.error("Access to this page is restricted at Saudi Arabia ");
       setPeople([]); // Clear people data when location is not allowed
     }
   };
