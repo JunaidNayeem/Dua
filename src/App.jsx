@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/dua" element={<Dua />} />
+          {/* <Route path="/dua" element={<Dua />} /> */}
           <Route path="/makedua" element={<MakeDua />} />
         </Routes>
       </BrowserRouter>
