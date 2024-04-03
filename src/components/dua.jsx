@@ -12,11 +12,11 @@ const LandingPage = () => {
       latRange: { min: 16.5, max: 32 },
       lonRange: { min: 34.5, max: 55 },
     },
-    {
-      name: "Bhagalpur, Bihar, India",
-      latRange: { min: 24.0, max: 26.0 },
-      lonRange: { min: 86.0, max: 88.0 },
-    },
+    // {
+    //   name: "Bhagalpur, Bihar, India",
+    //   latRange: { min: 24.0, max: 26.0 },
+    //   lonRange: { min: 86.0, max: 88.0 },
+    // },
   ];
 
   useEffect(() => {
